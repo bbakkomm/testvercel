@@ -1,0 +1,243 @@
+.container {
+  max-width: 36rem;
+  margin: 8.6rem auto;
+  padding: 0 2rem;
+}
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  box-shadow: 1px -1px 6px 0px rgba(166, 180, 200, 0.15);
+  margin-bottom: 3.6rem;
+}
+.profile-header__title {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.profile-header .btn_search {
+  width: 2rem;
+  height: 2rem;
+}
+.profile-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+.profile-box__img {
+  width: 8rem;
+  height: 8rem;
+  overflow: hidden;
+  border-radius: 4rem;
+  border: 1px solid #eee;
+}
+.profile-box__user {
+  flex: 1;
+}
+.profile-box__username {
+  font-size: 1.6rem;
+}
+.profile-box__email {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+.profile-box__btn {
+  color: #000;
+}
+.profile-box__btn:visited {
+  color: #000;
+}
+.profile-box .btn_arrowforward {
+  width: 2rem;
+  height: 2rem;
+}
+.skill-tag-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 3.6rem;
+}
+.skill-tag {
+  margin-bottom: 3.6rem;
+}
+.status-box {
+  border: 0.1rem solid #F2F1F6;
+  border-radius: 1rem;
+  margin: 0 2rem 1.6rem;
+  box-shadow: 0.1rem -0.1rem 0.6rem 0 #A6B4C826;
+}
+.status {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem 2rem;
+}
+.status__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 0.6rem;
+}
+.status__info {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  color: #aaa;
+}
+.status__info--like {
+  color: #FB744A;
+}
+.status__info--studing {
+  color: #FBD44A;
+}
+.status__info--complate {
+  color: #0396FC;
+}
+.status__desc {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #aaa;
+}
+.groupBox {
+  margin-bottom: 2rem;
+}
+.groupBox__title {
+  font-size: 1.6rem;
+  line-height: 5rem;
+  font-weight: 400;
+  color: #aaa;
+  margin: 1.4rem 0 1.6rem;
+  border-bottom: 1px solid #F2F1F6;
+}
+.groupBox__empty_txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #606060;
+  width: 100%;
+  height: 10rem;
+}
+.tabBox {
+  margin-bottom: 2.4rem;
+  border-bottom: 0.1rem solid #F2F1F6;
+}
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 4rem;
+  gap: 2.2rem;
+  padding: 0 2rem;
+}
+.tabs__menu {
+  font-size: 1.6rem;
+  color: #aaa;
+  line-height: 4rem;
+}
+.tabs__menu:hover {
+  color: #000;
+  border-bottom: 0.1rem solid #000;
+}
+.tabs__menu.active {
+  color: #000;
+  border-bottom: 0.1rem solid #000;
+}
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.comment-list__item {
+  display: flex;
+  gap: 0.9rem;
+  border: 0.1rem solid #F2F1F6;
+  border-radius: 1rem;
+  margin: 0 2rem;
+  box-shadow: 0.1rem -0.1rem 0.6rem 0 #A6B4C826;
+  padding: 1.6rem;
+}
+.comment-list__img {
+  width: 4rem;
+}
+.comment-list__wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.comment-list__username {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+}
+.comment-list__date {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  color: #aaa;
+}
+.comment-list__comment {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+.planDate {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1.6rem;
+}
+.planDate__day {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.planDate__week {
+  font-size: 1rem;
+}
+.planDate__dday {
+  font-size: 1.1rem;
+  color: #0396FC;
+  font-weight: 700;
+}
+.planList__item {
+  display: flex;
+  gap: 1.3rem;
+  margin-bottom: 1.6rem;
+  padding: 1.6rem;
+  border: 0.1rem solid #F2F1F6;
+  border-radius: 1rem;
+  box-shadow: 1px -1px 6px 0px #A6B4C826;
+}
+.planList__img {
+  width: 10.5rem;
+  height: 10.5rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.planList__title {
+  font-size: 1.4rem;
+}
+.planList__date {
+  font-size: 1.2rem;
+}
+.planList__week {
+  font-size: 1.2rem;
+}
+.planList__time {
+  font-size: 1.2rem;
+}
+.planList__place {
+  font-size: 1.2rem;
+}
+.planList__price {
+  font-size: 1.2rem;
+}
+.planList__person {
+  font-size: 1.2rem;
+}
+.planList__person__blue {
+  color: #0396FC;
+}

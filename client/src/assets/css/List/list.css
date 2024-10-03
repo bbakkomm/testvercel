@@ -1,0 +1,229 @@
+.list_tit {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-left: 20px;
+    margin-top: 50px;
+    border-bottom: 1px solid #F2F1F6;
+    height: 50px;
+    font-size: 16px;
+  }
+  .select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0;
+    height: 50px;
+  }
+  .select .whole_num {
+    font-size: 11px;
+    color: #999999;
+  }
+  .select .whole_num__count {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .select .filter {
+    display: flex;
+    font-size: 11px;
+    color: #999999;
+    gap: 30px;
+  }
+  .select .filter__popup {
+    margin-right: 14px;
+    cursor: pointer;
+    /* 모달*/
+  }
+  .select .modal_overlay {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 모달 컨텐츠 스타일 */
+  }
+  .select .modal_content {
+    z-index: 100;
+    position: relative;
+    background-color: white;
+    padding: 14px;
+    border-radius: 8px;
+    width: 320px;
+    height: 583px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  }
+  .select .modal_content .modal_tit {
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+  }
+  .select .modal_content .modal_btn {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+  }
+  .select .modal_content .filter_inner {
+    text-align: left;
+    color: #000;
+    margin-top: 23px;
+    font-size: 14px;
+  }
+  .select .modal_content .filter_inner .inner01 .options_container {
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+  }
+  .select .modal_content .filter_inner .inner01 .options_container .option_box {
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    color: #e5e5e5;
+    padding: 4px 8px 4px 8px;
+    font-size: 16px;
+  }
+  .select .modal_content .filter_inner .inner01 .options_container .selected {
+    background-color: #0396FC;
+    color: #fff;
+  }
+  .select .modal_content .filter_inner .inner02 {
+    margin-top: 24px;
+  }
+  .select .modal_content .filter_inner .inner02 .options_container {
+    display: flex;
+    gap: 6px;
+    margin-top: 6px;
+    flex-wrap: wrap;
+  }
+  .select .modal_content .filter_inner .inner02 .options_container .option_box {
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    color: #e5e5e5;
+    padding: 4px 8px 4px 8px;
+    font-size: 16px;
+  }
+  .select .modal_content .filter_inner .inner02 .options_container .selected1 {
+    background-color: #0396FC;
+    color: #fff;
+  }
+  .select .modal_content .filter_inner .inner02 .options_container .selected2 {
+    background-color: #FBD44A;
+    color: #fff;
+  }
+  .select .modal_content .filter_inner .inner02 .options_container .selected3 {
+    background-color: #CF649B;
+    color: #fff;
+  }
+  .select .modal_content .filter_inner .inner02 .options_container .selected4 {
+    background-color: #F7DF1E;
+    color: #fff;
+  }
+  .select .modal_content .filter_inner .inner02 .options_container .selected5 {
+    background-color: #3178C6;
+    color: #fff;
+  }
+  .select .modal_content .filter_inner .inner02 .options_container .selected6 {
+    background-color: #61DAFB;
+    color: #fff;
+  }
+  .select .modal_content .filter_inner .inner02 .options_container .selected7 {
+    background-color: #80BD01;
+    color: #fff;
+  }
+  .select .modal_content .filter_inner .inner02 .options_container .selected8 {
+    background-color: #EC2025;
+    color: #fff;
+  }
+  .select .modal_content .filter_inner .inner02 .options_container .selected9 {
+    background-color: #FF7161;
+    color: #fff;
+  }
+  .select .modal_content .filter_inner .inner02 .options_container .selected10 {
+    background-color: #FF61F6;
+    color: #fff;
+  }
+  .select .modal_content .filter_inner .commit {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid #0396FC;
+    border-radius: 10px;
+    color: #0396FC;
+  }
+  .list {
+    width: 100%;
+    height: 100%;
+    margin-top: 16px;
+    margin-bottom: 50px;
+  }
+  .list .list__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .list .list__wrapper .list__box {
+    width: 320px;
+    height: 202px;
+    border: 1px solid #F2F1F6;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 19px 15px;
+  }
+  .list .list__wrapper .list__box .list__badge {
+    display: flex;
+    gap: 0.3rem;
+    margin-bottom: 8px;
+  }
+  .list .list__wrapper .list__box .list__badge p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 0.5rem;
+  }
+  .list .list__wrapper .list__box .list__badge .list__title {
+    font-size: 1rem;
+    width: 43px;
+    height: 19px;
+    border: 1px solid #0396FC;
+    color: #0396FC;
+    padding: 3px 6px 3px 6px;
+  }
+  .list .list__wrapper .list__box .list__badge .list__skill {
+    padding: 0.1rem 0.6rem;
+    font-size: 1.1rem;
+    background-color: #F7DF1E;
+    color: #000;
+  }
+  .list .list__wrapper .list__box .study_name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .list .list__wrapper .list__box .study_inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .list .list__wrapper .list__box .study_inner .img_box {
+    width: 105px;
+    height: 105px;
+    border-radius: 10px;
+  }
+  .list .list__wrapper .list__box .study_inner .study_info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #656668;
+  }
+  

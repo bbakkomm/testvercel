@@ -1,0 +1,123 @@
+.header {
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  padding: 0 2rem;
+  background-color: #fff;
+  border: 0.1rem solid #f2f1f6;
+  box-shadow: 1px -1px 6px 0px #A6B4C826;
+}
+.header__link, .header__title, .header__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.header__title {
+  gap: 1.6rem;
+  font-size: 1.6rem;
+  color: #222;
+}
+.header__title a {
+  color: #222;
+}
+.header__btn {
+  gap: 1rem;
+}
+.header__btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8rem;
+}
+.header__btn button svg {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.header__search svg.search__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.header__like svg.like__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #fc4e03;
+}
+.header__share svg.share__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.header .logo {
+  width: 8rem;
+}
+.header .icon {
+  width: 2.4rem;
+}
+.dimmed {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.modal {
+  z-index: 1;
+  position: fixed;
+  bottom: 7.4rem;
+  left: 2rem;
+  width: calc(100% - 4rem);
+  padding: 1.6rem 2rem 3.6rem;
+  background: #fff;
+  border-radius: 0.4rem;
+}
+.modal__titleWrap {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.modal__titleWrap svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #ccc;
+}
+.modal__title {
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.modal__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.modal__input {
+  width: 22rem;
+  height: 3.6rem;
+  padding: 0 0.8rem;
+  border: 1px solid #e5e5e5;
+}
+.modal .modal__btn {
+  display: block;
+  width: 6rem;
+  line-height: 3.6rem;
+  border-radius: 0.4rem;
+  background-color: #0396fc;
+  line-height: 3.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+.modal__notice {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 2rem;
+  font-size: 1.2rem;
+  color: #0396fc;
+}

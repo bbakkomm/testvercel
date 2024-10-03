@@ -1,0 +1,42 @@
+/* ============= GLOBAL CSS =============== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+}
+/*10px*/
+html, body, #root {
+  height: 100vh;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+button {
+  cursor: pointer;
+  background: transparent;
+  border: transparent;
+}
+.form-row {
+  width: 100%;
+}
+.form-row.hidden {
+  display: none;
+}
+.input-write {
+  width: 100%;
+}
+.input-submit {
+  width: 100%;
+}

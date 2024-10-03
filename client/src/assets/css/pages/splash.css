@@ -1,0 +1,74 @@
+.splash-ver2 {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 20;
+}
+.splash-ver2 .title-box {
+  position: relative;
+  top: 50%;
+  transform: translateY(-150%);
+  gap: 1rem;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 3s;
+  animation: fadeInText 3s;
+}
+.splash-ver2 .title-box__logo {
+  position: relative;
+  width: 14rem;
+  margin: 0 auto 0.8rem;
+}
+.splash-ver2 .title-box__dot {
+  position: absolute;
+  top: 58%;
+  left: 2.3rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 10rem;
+  background-color: #0396fc;
+  animation: bounce 3s ease-in-out infinite;
+}
+.splash-ver2 .title-box__desc {
+  text-align: center;
+  font-size: 1.4rem;
+}
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bounce {
+  0% {
+    top: -20%;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    top: 58%;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    top: 0%;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    top: 58%;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    top: 20%;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    top: 58%;
+    animation-timing-function: ease-out;
+  }
+}

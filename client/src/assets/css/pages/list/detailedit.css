@@ -1,0 +1,134 @@
+.detailedit {
+    margin: 5rem 0 17.6rem;
+    padding: 3.6rem 2rem 0;
+  }
+  .detailedit input, .detailedit .input-box--img, .detailedit .input-box .input-label, .detailedit .input-textarea, .detailedit .input-check label {
+    cursor: pointer;
+  }
+  .detailedit .input-box {
+    display: flex;
+    align-items: start;
+    gap: 0.8rem;
+  }
+  .detailedit .input-box--img {
+    width: 32rem;
+    height: 21.3rem;
+    margin: 0 auto 3.6rem;
+    border-radius: 1rem;
+    border: 0.1rem solid #f2f1f6;
+    color: #ccc;
+    overflow: hidden;
+  }
+  .detailedit .input-box--img .input-label.input-label--img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  .detailedit .input-box--img .input-label.input-label--img svg.input-label__icon {
+    margin: 0;
+    font-size: 4.8rem;
+  }
+  .detailedit .input-box--img .input-write {
+    display: none;
+  }
+  .detailedit .input-box--img img {
+    width: 32rem;
+    height: 21.3rem;
+    object-fit: cover;
+  }
+  .detailedit .input-box__range {
+    line-height: 3.6rem;
+  }
+  .detailedit .input-box .input-label {
+    position: relative;
+    color: #656668;
+  }
+  .detailedit .input-box .input-label--require::before {
+    content: '*';
+    position: absolute;
+    top: 0.4rem;
+    right: 0;
+  }
+  .detailedit .input-box .input-label svg {
+    margin: 1rem 0.8rem 0 0;
+  }
+  .detailedit .input-box .input-textarea {
+    height: 21.3rem;
+    resize: none;
+    line-height: 1.4;
+  }
+  .detailedit .input-box .input-check {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.6rem;
+  }
+  .detailedit .input-box .input-check__item--html:checked + label {
+    background-color: #f15a29;
+    color: #fff;
+  }
+  .detailedit .input-box .input-check__item--css:checked + label {
+    background-color: #0396fc;
+    color: #fff;
+  }
+  .detailedit .input-box .input-check__item--scss:checked + label {
+    background-color: #cf649b;
+    color: #fff;
+  }
+  .detailedit .input-box .input-check__item--javascript:checked + label {
+    background-color: #f7df1e;
+    color: #000;
+  }
+  .detailedit .input-box .input-check__item--react:checked + label {
+    background-color: #02d9ff;
+    color: #fff;
+  }
+  .detailedit .input-box .input-check__item--vue:checked + label {
+    background-color: #435466;
+    color: #4dba87;
+  }
+  .detailedit .input-box .input-check__item--typescript:checked + label {
+    background: #3178c6;
+    color: #fff;
+  }
+  .detailedit .input-box .input-check__item--dart:checked + label {
+    background: #00cbb2;
+    color: #fff;
+  }
+  .detailedit .input-box .input-check__item--flutter:checked + label {
+    background: #5dc2ed;
+    color: #fff;
+  }
+  .detailedit .input-box .input-check__item--figma:checked + label {
+    background: #f24515;
+    color: #fff;
+  }
+  .detailedit .input-box .input-check__item:checked + label {
+    border: 1px solid transparent;
+  }
+  .detailedit .input-box .input-check input {
+    display: none;
+  }
+  .detailedit .input-box .input-check label {
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 1px solid #e5e5e5;
+    color: #ccc;
+  }
+  .detailedit .btn {
+    position: fixed;
+    bottom: 5rem;
+    padding: 0.8rem 2rem;
+    box-shadow: 0.1rem -0.1rem 0.6rem rgba(166, 180, 200, 0.3);
+  }
+  

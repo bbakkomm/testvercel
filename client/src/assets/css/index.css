@@ -1,0 +1,34 @@
+/* common */
+@import 'common/common.css';
+
+/* component layout */
+@import 'component/layout/commonheader.css';
+@import 'component/layout/commonnav.css';
+
+/* component list */
+@import 'component/list/schedule.css';
+@import 'component/study/studycard.css';
+@import 'component/search/search.css';
+
+/* pages */
+@import 'pages/home.css';
+@import 'pages/study.css';
+@import 'component/study/commonhomestudycard.css';
+@import 'pages/splash.css';
+
+/* pages list  */
+@import 'pages/list/creation.css';
+@import 'pages/list/detail.css';
+@import 'pages/list/detailedit.css';
+
+/* pages register */
+@import 'pages/register/id.css';
+@import 'pages/register/join.css';
+@import 'pages/register/joinsetting.css';
+@import 'pages/register/login.css';
+@import 'pages/register/pw.css';
+@import 'pages/register/success.css';
+
+/* pages profile */
+@import 'pages/profile/profile.css';
+@import 'pages/profile/profileedit.css';

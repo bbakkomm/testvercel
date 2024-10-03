@@ -1,0 +1,26 @@
+.success {
+  position: relative;
+  height: 100vh;
+}
+.success__inner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.success .text {
+  text-align: center;
+  padding-bottom: 6.6rem;
+}
+.success .text__logo {
+  width: 13.6rem;
+  margin-bottom: 1.2rem;
+}
+.success .text__title {
+  margin-bottom: 3rem;
+  font-size: 2.8rem;
+}
+.success .text__desc {
+  font-size: 1.6rem;
+  color: #aaa;
+}

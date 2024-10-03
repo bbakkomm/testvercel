@@ -1,0 +1,68 @@
+.study-wrap {
+	margin: 6rem 0 8rem;
+	padding: 0 2rem 7rem 2rem;
+  }
+  .study-wrap .studytab {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 0.5rem;
+	position: relative;
+	margin-bottom: 1rem;
+  }
+  .study-wrap .studytab-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: #ababab;
+	width: 2.8em;
+	height: 4rem;
+  }
+  .study-wrap .studytab-btn.active {
+	color: #000;
+	font-weight: 700;
+  }
+  .study-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 5rem;
+  }
+  .study-header__length--desc {
+	font-size: 1.1rem;
+	line-height: 1.3rem;
+	font-weight: 400;
+	color: #999;
+  }
+  .study-header__length--total {
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+	font-weight: 700;
+	color: #999;
+  }
+  .study-header__sort--total {
+	display: flex;
+	align-items: end;
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+	font-weight: 700;
+	color: #999;
+  }
+  .menu-box {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1.6rem;
+	border-bottom: 1px solid #F2F1F6;
+  }
+  .menu-box__item {
+	font-size: 1.6rem;
+	line-height: 4rem;
+	color: #aaa;
+  }
+  .menu-box__item.active {
+	color: #222;
+	border-bottom: 0.2rem solid #222;
+  }
+  

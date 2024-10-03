@@ -1,0 +1,74 @@
+.broom {
+    max-width: 36rem;
+    margin: 5rem auto 7.4rem;
+    padding-bottom: 7rem;
+  }
+  .main-header {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    padding: 0 2rem;
+    background-color: #fff;
+    border: 0.1rem solid #e5e5e5;
+  }
+  .main-header__title {
+    gap: 1.6rem;
+    font-size: 1.6rem;
+    color: #222;
+  }
+  .main-header__link {
+    display: flex;
+  }
+  .main-header .logo {
+    width: 8rem;
+  }
+  .kv {
+    margin-bottom: 3.6rem;
+  }
+  .banner-box {
+    position: relative;
+    height: 33rem;
+    background-color: #eee;
+  }
+  .banner-box > img {
+    width: 36rem;
+    height: 33rem;
+  }
+  .banner-box__title {
+    position: absolute;
+    bottom: 2.4rem;
+    left: 1.6rem;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .banner-box__title--black {
+    color: #000;
+  }
+  .study-home {
+    padding: 0 2rem;
+  }
+  .study-home__sub {
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+    color: #656668;
+  }
+  .study-home__title {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 1.6rem;
+  }
+  .study-home__cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.6rem;
+  }
+  

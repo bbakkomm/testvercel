@@ -1,0 +1,56 @@
+{
+    "result": [
+        {
+            "_id": "000004",
+            "title": "Javascript 기초다지기",
+            "thumb": "study_img_03.jpg",
+            "date": "2024.08.14",
+            "time": "오후 04:00",
+            "place": "신사역 스터디 카페",
+            "price": "5,000",
+            "minimumPerson": 3,
+            "maximumPerson": 6,
+            "skillTag": ["javascript"],
+            "complate": false
+        },
+        {
+            "_id": "000003",
+            "title": "Flutter로 하이브리드 앱 만들기",
+            "thumb": "study_img_04.png",
+            "date": "2024.08.01",
+            "time": "오후 02:00",
+            "place": "강남역 4번 출구",
+            "price": "비용없음",
+            "minimumPerson": 4,
+            "maximumPerson": 13,
+            "skillTag": ["dart", "flutter"],
+            "complate": true
+        },
+        {
+            "_id": "000002",
+            "title": "React+TypeScript 뽀개기",
+            "thumb": "study_img_05.png",
+            "date": "2024.09.27",
+            "time": "오후 07:00",
+            "place": "하얼빈 16C",
+            "price": "비용없음",
+            "minimumPerson": 5,
+            "maximumPerson": 8,
+            "skillTag": ["javascript", "typescript", "react"],
+            "complate": false
+        },
+        {
+            "_id": "000001",
+            "title": "웹 퍼블리싱 기초 배우기",
+            "thumb": "study_img_06.jpg",
+            "date": "2024.09.15",
+            "time": "오후 05:30",
+            "place": "Zoom 스터디",
+            "price": "비용없음",
+            "minimumPerson": 4,
+            "maximumPerson": 13,
+            "skillTag": ["html", "css", "javascript"],
+            "complate": true
+        }
+    ]
+}

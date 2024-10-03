@@ -1,0 +1,62 @@
+.studycard__item {
+	padding: 2rem 1.6rem 1.6rem;
+	margin-bottom: 1.6rem;
+	border: 1px solid #F2F1F6;
+	border-radius: 1rem;
+	box-shadow: 1px -1px 6px 0px #A6B4C826;
+  }
+  .studycard .skill-tag {
+	margin-bottom: 1.6rem;
+  }
+  .study-box {
+	position: relative;
+  }
+  .study-box__content {
+	display: flex;
+	justify-content: flex-start;
+	gap: 0.8rem;
+  }
+  .study-box__title {
+	font-size: 1.6rem;
+	margin-bottom: 0.8rem;
+	line-height: 1.9rem;
+  }
+  .study-box__image {
+	width: 10.5rem;
+	min-width: 10.5rem;
+	height: 10.5rem;
+	border-radius: 1rem;
+	overflow: hidden;
+	background-color: #eee;
+  }
+  .study-box__item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 0.2rem;
+	font-size: 1.1rem;
+	color: #656668;
+	margin-bottom: 0.6rem;
+  }
+  .study-box__item:last-child {
+	margin-bottom: 0;
+  }
+  .study-box__desc {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 16rem;
+	line-height: 1.3rem;
+  }
+  .study-box .btn-like {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3rem;
+	height: 3rem;
+  }
+  

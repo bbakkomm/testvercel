@@ -1,0 +1,71 @@
+{
+    "result" :[
+        {
+            "id": 1,
+            "skillTag" : ["typescript", "react", "javascript"],
+            "name": "MORGAN",
+            "date": "2024.10.05",
+            "time": "오후 02:00",
+            "location": "강남역 4번 출구",
+            "cost": "비용없음",
+            "participants": "최소 4명 ~ 최대 13명",
+            "imgSrc": "study_img_tbd.jpg"
+          },
+          {
+            "id": 2,
+            "skillTag" : "javascript",
+            "name": "DAVID",
+            "date": "2024.08.02",
+            "time": "오후 02:00",
+            "location": "강남역 4번 출구",
+            "cost": "비용없음",
+            "participants": "최소 4명 ~ 최대 13명",
+            "imgSrc": "study_img_tbd.jpg"
+          },
+          {
+            "id": 3,
+            "skillTag" : ["typescript", "react", "javascript"],
+            "name": "JACOB",
+            "date": "2024.08.03",
+            "time": "오후 02:00",
+            "location": "강남역 4번 출구",
+            "cost": "비용없음",
+            "participants": "최소 4명 ~ 최대 13명",
+            "imgSrc": "study_img_tbd.jpg"
+          },
+          {
+            "id": 4,
+            "skillTag" : ["typescript", "react", "javascript"],
+            "name": "YUMI",
+            "date": "2024.09.30",
+            "time": "오후 02:00",
+            "location": "강남역 4번 출구",
+            "cost": "비용없음",
+            "participants": "최소 4명 ~ 최대 13명",
+            "imgSrc": "study_img_tbd.jpg"
+          },
+          {
+            "id": 5,
+            "skillTag" : ["typescript", "react", "javascript"],
+            "name": "YUMI",
+            "date": "2024.08.05",
+            "time": "오후 02:00",
+            "location": "강남역 4번 출구",
+            "cost": "비용없음",
+            "participants": "최소 4명 ~ 최대 13명",
+            "imgSrc": "study_img_tbd.jpg"
+          },
+          {
+            "id": 6,
+            "skillTag" : ["typescript", "react", "javascript"],
+            "name": "YUMI",
+            "date": "2024.08.06",
+            "time": "오후 02:00",
+            "location": "강남역 4번 출구",
+            "cost": "비용없음",
+            "participants": "최소 4명 ~ 최대 13명",
+            "imgSrc": "study_img_tbd.jpg"
+          }
+    ]
+
+}

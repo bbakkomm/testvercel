@@ -1,0 +1,12 @@
+.join {
+  margin: 5rem 0;
+  padding: 3.6rem 2rem 1.6rem;
+}
+.join__title {
+  margin-bottom: 3.6rem;
+  font-size: 2.4rem;
+  letter-spacing: -0.05em;
+}
+.join .recaptcha {
+  margin-bottom: 8.2rem;
+}

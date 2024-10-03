@@ -1,0 +1,59 @@
+{
+    "result":[
+        {
+            "_id" : "000005",
+            "password" : "qwer1234",
+            "userName" : "뚜부",
+            "userImg" : "profile_01.png",
+            "userEmail" : "broom@broom.com",
+            "skillTag" : ["typescript", "react", "javascript"],
+            "like" : 9,
+            "studing" : 2,
+            "complate" : 2
+        },
+        {
+            "_id" : "000004",
+            "password" : "qwer1234",
+            "userName" : "데이빗",
+            "userImg" : "profile_05.png",
+            "userEmail" : "david@broom.com",
+            "skillTag" : ["javascript", "react", "next"],
+            "like" : 9,
+            "studing" : 2,
+            "complate" : 3
+        },
+        {
+            "_id" : "000003",
+            "password" : "qwer1234",
+            "userName" : "제이콥",
+            "userImg" : "profile_04.png",
+            "userEmail" : "jacob@broom.com",
+            "skillTag" : ["dart", "flutter"],
+            "like" : 4,
+            "studing" : 1,
+            "complate" : 8
+        },
+        {
+            "_id" : "000002",
+            "password" : "qwer1234",
+            "userName" : "모건",
+            "userImg" : "profile_03.png",
+            "userEmail" : "morgan@broom.com",
+            "skillTag" : ["html", "css", "javascript"],
+            "like" : 5,
+            "studing" : 6,
+            "complate" : 30
+        },
+        {
+            "_id" : "000001",
+            "password" : "qwer1234",
+            "userName" : "유미",
+            "userImg" : "profile_02.png",
+            "userEmail" : "yumi@broom.com",
+            "skillTag" : ["react", "vue"],
+            "like" : 20,
+            "studing" : 8,
+            "complate" : 4
+        }        
+    ]
+}
