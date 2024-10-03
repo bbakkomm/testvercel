@@ -3,7 +3,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 import express from "express";
-const app = express();
+export const app = express();
 
 import morgan from "morgan";
 import mongoose from "mongoose";
@@ -81,4 +81,3 @@ try {
   console.log(error);
   process.exit(1);
 }
-
