@@ -5,8 +5,10 @@ const corsOption = {
     "http://localhost:5100",
     "http://localhost:5173",
   ],
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
   credentials: true,
-  optionsSuccessStatus: 200
 }
 
 export default corsOption;
