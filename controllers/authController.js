@@ -39,11 +39,11 @@ export const login = async (req, res) => {
 }
 
 export const logout = async (req, res) => {
-  res.cookie('token', 'logout', {
-    httpOnly: true,
-    expires: new Date(Date.now()),
-    sameSite: 'None', // sameSite임을 명시
-  });
+  // res.cookie('token', 'logout', {
+  //   httpOnly: true,
+  //   expires: new Date(Date.now()),
+  //   sameSite: 'None', // sameSite임을 명시
+  // });
 
   res.clearCookie('token').end();
   res.status(StatusCodes.OK).json({ msg: 'user logged out' });
