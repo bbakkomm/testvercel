@@ -33,7 +33,6 @@ export const login = async (req, res) => {
     expires: new Date(Date.now() + oneDay),
     secure: process.env.NODE_ENV === 'production' ? true : '',
     sameSite: 'None', // sameSite임을 명시
-    domain: '.web-testvercels-m26geil7668e23ca.sel4.cloudtype.app',
   });
 
   res.status(StatusCodes.OK).json({ msg: 'user logged in' });
@@ -44,7 +43,6 @@ export const logout = async (req, res) => {
     httpOnly: true,
     expires: new Date(Date.now()),
     sameSite: 'None', // sameSite임을 명시
-    domain: '.web-testvercels-m26geil7668e23ca.sel4.cloudtype.app',
   });
 
   res.status(StatusCodes.OK).json({ msg: 'user logged out' });
