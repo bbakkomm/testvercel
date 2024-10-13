@@ -4,6 +4,7 @@ dotenv.config();
 
 import express from "express";
 export const app = express();
+const cors = require("cors");
 
 import morgan from "morgan";
 import mongoose from "mongoose";
@@ -47,13 +48,39 @@ app.get('/', (req, res) => {
   res.send('hello world');
 });
 
-app.get('/api/v1/test', (req, res) => {
-  res.json({ msg: 'test route' });
-});
-
-app.use('/api/v1/study', authenticateUser, studyRouter);
-app.use('/api/v1/users', authenticateUser, userRouter);
-app.use('/api/v1/auth', authRouter);
+app.use(cors({
+    origin: [
+      "https://port-0-testvercel-m26geil7668e23ca.sel4.cloudtype.app/",
+      "https://web-testvercels-m26geil7668e23ca.sel4.cloudtype.app/",
+      "http://localhost:5100"
+    ],
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    preflightContinue: false,
+    optionsSuccessStatus: 204,
+    credentials: true,
+  }), '/api/v1/study', authenticateUser, studyRouter);
+app.use(cors({
+    origin: [
+      "https://port-0-testvercel-m26geil7668e23ca.sel4.cloudtype.app/",
+      "https://web-testvercels-m26geil7668e23ca.sel4.cloudtype.app/",
+      "http://localhost:5100"
+    ],
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    preflightContinue: false,
+    optionsSuccessStatus: 204,
+    credentials: true,
+  }), '/api/v1/users', authenticateUser, userRouter);
+app.use(cors({
+    origin: [
+      "https://port-0-testvercel-m26geil7668e23ca.sel4.cloudtype.app/",
+      "https://web-testvercels-m26geil7668e23ca.sel4.cloudtype.app/",
+      "http://localhost:5100"
+    ],
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    preflightContinue: false,
+    optionsSuccessStatus: 204,
+    credentials: true,
+  }), '/api/v1/auth', authRouter);
 
 // 배포용
 // app.get('*', (req, res) => {
