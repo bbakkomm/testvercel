@@ -31,8 +31,8 @@ export const login = async (req, res) => {
   res.cookie('token', token, {
     httpOnly: true,
     expires: new Date(Date.now() + oneDay),
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: 'strict', // sameSite임을 명시
+    secure: process.env.NODE_ENV === 'production' ? true : '',
+    sameSite: 'None', // sameSite임을 명시
     domain: '.port-0-testvercel-m26geil7668e23ca.sel4.cloudtype.app',
   });
 
@@ -43,7 +43,7 @@ export const logout = async (req, res) => {
   res.cookie('token', 'logout', {
     httpOnly: true,
     expires: new Date(Date.now()),
-    sameSite: 'strict', // sameSite임을 명시
+    sameSite: 'None', // sameSite임을 명시
     domain: '.port-0-testvercel-m26geil7668e23ca.sel4.cloudtype.app',
   });
 
