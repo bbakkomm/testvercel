@@ -50,8 +50,8 @@ app.get('/', (req, res) => {
 
 app.use(cors({
     origin: [
-      "https://port-0-testvercel-m26geil7668e23ca.sel4.cloudtype.app/",
-      "https://web-testvercels-m26geil7668e23ca.sel4.cloudtype.app/",
+      "https://port-0-testvercel-m26geil7668e23ca.sel4.cloudtype.app",
+      "https://web-testvercels-m26geil7668e23ca.sel4.cloudtype.app",
       "http://localhost:5100"
     ],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
@@ -61,8 +61,8 @@ app.use(cors({
   }), '/api/v1/study', authenticateUser, studyRouter);
 app.use(cors({
     origin: [
-      "https://port-0-testvercel-m26geil7668e23ca.sel4.cloudtype.app/",
-      "https://web-testvercels-m26geil7668e23ca.sel4.cloudtype.app/",
+      "https://port-0-testvercel-m26geil7668e23ca.sel4.cloudtype.app",
+      "https://web-testvercels-m26geil7668e23ca.sel4.cloudtype.app",
       "http://localhost:5100"
     ],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
@@ -72,8 +72,8 @@ app.use(cors({
   }), '/api/v1/users', authenticateUser, userRouter);
 app.use(cors({
     origin: [
-      "https://port-0-testvercel-m26geil7668e23ca.sel4.cloudtype.app/",
-      "https://web-testvercels-m26geil7668e23ca.sel4.cloudtype.app/",
+      "https://port-0-testvercel-m26geil7668e23ca.sel4.cloudtype.app",
+      "https://web-testvercels-m26geil7668e23ca.sel4.cloudtype.app",
       "http://localhost:5100"
     ],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
