@@ -45,6 +45,7 @@ export const logout = async (req, res) => {
     sameSite: 'None', // sameSite임을 명시
   });
 
+  res.clearCookie('token').end();
   res.status(StatusCodes.OK).json({ msg: 'user logged out' });
 }
 
