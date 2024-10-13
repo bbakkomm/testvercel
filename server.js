@@ -2,20 +2,24 @@ import 'express-async-errors';
 import * as dotenv from "dotenv";
 dotenv.config();
 
+import corsOption from './routes/corsOption.js';
+const cors = require("cors");
+
 import express from "express";
 export const app = express();
-const cors = require("cors");
-const corsOption = {
-  origin: [
-    "https://port-0-testvercel-m26geil7668e23ca.sel4.cloudtype.app",
-    "https://web-testvercels-m26geil7668e23ca.sel4.cloudtype.app",
-    "http://localhost:5100"
-  ],
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  preflightContinue: false,
-  optionsSuccessStatus: 204,
-  credentials: true,
-}
+// const cors = require("cors");
+// const corsOption = {
+//   origin: [
+//     "https://port-0-testvercel-m26geil7668e23ca.sel4.cloudtype.app",
+//     "https://web-testvercels-m26geil7668e23ca.sel4.cloudtype.app",
+//     "http://localhost:5100",
+//     "http://localhost:5173",
+//   ],
+//   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+//   preflightContinue: false,
+//   optionsSuccessStatus: 204,
+//   credentials: true,
+// }
 
 import morgan from "morgan";
 import mongoose from "mongoose";
@@ -41,6 +45,8 @@ cloudinary.config({
   api_secret: process.env.CLOUD_API_SECRET,
 });
 
+app.use(cors(corsOption));
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
@@ -52,6 +58,7 @@ if (process.env.NODE_ENV === 'development') {
 // DEV
 // app.use(express.static(path.resolve(__dirname, './client/public')));
 
+// app.use(cors(corsOption));
 app.use(cookieParser());
 app.use(express.json());
 
@@ -59,9 +66,9 @@ app.get('/', (req, res) => {
   res.send('hello world');
 });
 
-app.use(cors(corsOption), '/api/v1/study', authenticateUser, studyRouter);
-app.use(cors(corsOption), '/api/v1/users', authenticateUser, userRouter);
-app.use(cors(corsOption), '/api/v1/auth', authRouter);
+app.use('/api/v1/study', cors(corsOption), authenticateUser, studyRouter);
+app.use('/api/v1/users', cors(corsOption), authenticateUser, userRouter);
+app.use('/api/v1/auth', cors(corsOption), authRouter);
 
 // 배포용
 // app.get('*', (req, res) => {
@@ -76,7 +83,7 @@ app.use('*', (req, res) => {
   res.sendStatus(404).json({ msg: 'not found'});
 });
 
-app.use(errorHandlerMiddleware);
+app.use(cors(corsOption), errorHandlerMiddleware);
 
 const port = process.env.PORT || 5100;
 
